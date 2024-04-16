@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import styled from '@emotion/styled';
 import { Routes, Route } from 'react-router-dom'
-import { DataView } from 'components/DataView';
+import { DataView } from 'pages/DataView';
 import { InputContainer } from 'components/InputContainer';
 import { ToDoListContextProvider } from 'context/ToDoList';
 
@@ -24,15 +24,7 @@ function App() {
     <Container>
       <ToDoListContextProvider>
         <Routes>
-          <Route 
-            path="/" 
-            element={
-              <>
-                <DataView />
-                <InputContainer />
-              </>
-            }
-          />
+          <Route path="/" element={<DataView/>} />
           <Route
             path="*"
             element={
