@@ -42,11 +42,9 @@ const InputContainer = styled.div`
   justify-content: center;
 `;
 
-interface Props {
-  readonly onClose: () => void;
-}
 
-export const ToDoInput = ({ onClose }: Props) => {
+
+export const ToDoInput = () => {
   const { onAdd } = useContext(ToDoListContext);
   const [toDo, setToDo] = useState('');
 
@@ -55,7 +53,6 @@ export const ToDoInput = ({ onClose }: Props) => {
 
     onAdd(toDo);
     setToDo('');
-    onClose();
   };
 
   return (

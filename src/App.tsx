@@ -3,7 +3,7 @@ import './App.css';
 import styled from '@emotion/styled';
 import { Routes, Route } from 'react-router-dom'
 import { DataView } from 'pages/DataView';
-import { InputContainer } from 'components/InputContainer';
+import { ToDoInput } from 'components/ToDoInput';
 import { ToDoListContextProvider } from 'context/ToDoList';
 
 const Container = styled.div`
@@ -25,6 +25,7 @@ function App() {
       <ToDoListContextProvider>
         <Routes>
           <Route path="/" element={<DataView/>} />
+          <Route path="/add" element={<ToDoInput />} />
           <Route
             path="*"
             element={

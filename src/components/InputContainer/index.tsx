@@ -15,7 +15,7 @@ export const InputContainer = () => {
 
   return (
     <>
-      {showToDoInput && <ToDoInput onClose={onClose} />}
+      {showToDoInput && <ToDoInput/>}
       <ShowInputButton show={showToDoInput} onClick={() => setShowToDoInput(!showToDoInput)} />
     </>
   );
