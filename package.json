@@ -54,5 +54,6 @@
     "globals": "^15.0.0",
     "prettier": "^3.2.5",
     "typescript-eslint": "^7.7.0"
-  }
+  },
+  "homepage": "https://songhee23.github.io/ch7_react-router-todo"
 }
