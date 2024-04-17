@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import styled from '@emotion/styled';
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom';
 import { DataView } from 'pages/DataView';
 import { ToDoInput } from 'pages/ToDoInput';
 import { ToDoListContextProvider } from 'context/ToDoList';

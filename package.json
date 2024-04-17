@@ -27,7 +27,9 @@
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src",
     "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "lint:fix": "eslint --fix ./src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,9 +53,10 @@
     "@eslint/js": "^9.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
+    "gh-pages": "^6.1.1",
     "globals": "^15.0.0",
     "prettier": "^3.2.5",
     "typescript-eslint": "^7.7.0"
   },
-  "homepage": "https://songhee23.github.io/ch7_react-router-todo"
+  "homepage": "https://songhee23.github.io/ch7_react-router-todo/"
 }
